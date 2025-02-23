@@ -28,10 +28,9 @@ body {
 
 .buttons {
   width: 1200px;
-  margin: 0 auto;
   list-style-type: none;
   position: fixed;
-  top: 15 px;
+  padding: 15px 15px 15px 15px;
 }
 
 
@@ -41,8 +40,8 @@ body {
   border-radius: 50px;
   cursor: pointer;
   outline: none;
-  margin-top: 2em;
-  font-size: 10px;
+  margin-top: 25px;
+  font-size: 10;
   color: #fff;
   background: #16a083;
   margin: 0 auto;
@@ -66,7 +65,7 @@ body {
   margin-bottom: 10px;
   list-style-type: none;
   position: fixed;
-  margin-top: 10px;
+  margin-top: 30px;
 }
  
 .main-title {

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="MobileOptimized" content="176" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js?2"></script>
+    <script>
+        function setThemeClass() {
+            document.documentElement.className = Telegram.WebApp.colorScheme;
+        }
+
+        Telegram.WebApp.onEvent('themeChanged', setThemeClass);
+        setThemeClass();
+
+    </script>
+
+    <title></title>
+
+<body class="" style="visibility: true;">
+
+<section id="top_sect" class="second">
+    <button id="main_btn" onclick="DemoApp.sendMessage('');">DV 2025</button>
+    <button id="with_webview_btn" onclick="DemoApp.sendMessage('', true);">DV 2026</button>
+ 
+    <input type="text" placeholder="Input text in regular input..." id="regular_field" />
+    <div
+        class="input"
+        contenteditable="true"
+        data-placeholder="Input text in contenteditable field..."
+        id="text_field"
+    ></div>
+    <div id="peer_wrap" style="display:none">
+        <img id="peer_photo" class="chat_img" src="">
+        <span id="peer_name"></span>
+    </div>
+    
+</section>
+</body>
+</html> 
+

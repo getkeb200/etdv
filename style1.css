@@ -77,16 +77,16 @@ body {
 .menu-items {
   list-style-type: none;
   position: fixed;
-  top: 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
 .menu-items li {
- float: left;
+  float: left;
   border-right: 1px solid #bbb;
 }
 

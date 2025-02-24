@@ -115,7 +115,7 @@ text-decoration:underline;
 /* Create three equal columns that floats next to each other */
 .column {
   float: block;
-  width: 33.33%;
+  width: 450px;
   padding: 20px;
   margin: 20px 0px 0px 120px;
   height: 120px; /* Should be removed. Only for demonstration */

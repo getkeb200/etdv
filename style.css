@@ -84,7 +84,7 @@ float:left;
 text-decoration:none;
 text-align:center;
 color:#504d4b;
-font-size:18px;
+font-size:12px;
 line-height:37px;
 }
 #menu ul li.selected a{
@@ -96,7 +96,7 @@ float:left;
 text-decoration:underline;
 text-align:center;
 color:#504d4b;
-font-size:18px;
+font-size:12px;
 line-height:37px;
 }
 #menu ul li.divider{
@@ -153,7 +153,7 @@ text-decoration:underline;
 
   text-align: center;
  
-  font-size:13px;
+  font-size:18px;
   font-style:italic;
 
 }
@@ -161,7 +161,7 @@ text-decoration:underline;
 
   text-align: center;
  
-  font-size:12px;
+  font-size:16px;
   font-style:italic;
 
 }
@@ -170,7 +170,7 @@ text-decoration:underline;
 
   text-align: center;
  
-  font-size:12px;
+  font-size:14px;
   font-style:italic;
 
 }

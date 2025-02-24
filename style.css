@@ -43,11 +43,15 @@ height: auto;
 margin:auto;
 background-color:#001300;
 }
-.header{
+#header{
+overflow: hidden;
 width:auto;
-height:auto;
-padding:auto;
+height:50px;
+position: fixed; /* Set the navbar to fixed position */
+top: 0; /* Position the navbar at the top of the page */
+background:url(dvheader.jpg) no-repeat center;
 }
+
 #logo{
 overflow: hidden;
 width:auto;

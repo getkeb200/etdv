@@ -45,8 +45,12 @@ background-color:#001300;
 }
 .header{
 width:auto;
-height:150px;
+height:100px;
 padding:auto;
+overflow: hidden;
+background-color: #333;
+position: fixed; /* Set the navbar to fixed position */
+top: 0; /* Position the navbar at the top of the page */
 background:url(dvheader.jpg) no-repeat center;
 }
 .logo{
@@ -58,7 +62,7 @@ width:auto;
 height:25px;
 float:center;
 overflow: hidden;
-background-color: #333;
+
 position: fixed; /* Set the navbar to fixed position */
 top: 0; /* Position the navbar at the top of the page */
 /*width: 100%; /* Full width */

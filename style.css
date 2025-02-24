@@ -144,8 +144,8 @@ text-decoration:underline;
   float: block;
   width: auto;
   /* margin-top: 100px; /* Add a top margin to avoid content overlay */
-  padding: 20px;
-  margin: 80px 0px 0px 20px;
+  padding: 0px;
+  margin: 20px 0px 0px 20px;
   height: 20px; /* Should be removed. Only for demonstration */
   
   
@@ -173,6 +173,7 @@ text-decoration:underline;
  
   font-size:16px;
   font-style:italic;
+  color: white;
 
 }
 

@@ -41,7 +41,7 @@ font-size:11px;
 width:100%;
 height: auto;
 margin:auto;
-background-color:#001300;
+background-color:black;
 }
 .header{
 width:100%;
@@ -49,6 +49,7 @@ height:150px;
 overflow: hidden;
 position: fixed; /* Set the navbar to fixed position */
 top: 0; /* Position the navbar at the top of the page */
+background-color:black;
 background:url(dvheader.jpg) no-repeat center;
 }
 .logo{

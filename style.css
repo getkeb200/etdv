@@ -45,7 +45,7 @@ margin:auto;
 background-color: #000000;
 }
 .header{
-width:auto;
+width:600px;
 height:85px;
 overflow: hidden;
 position: fixed; /* Set the navbar to fixed position */
@@ -60,7 +60,7 @@ padding:0px 0 0 200px;
 
 /*-----------------------------menu-------------------*/
 #menu{
-width:auto;
+width:600px;
 height:25px;
 float:center;
 overflow: hidden;

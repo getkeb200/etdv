@@ -48,9 +48,8 @@ width:auto;
 height:auto;
 padding:auto;
 }
-.logo{
+#logo{
 overflow: hidden;
-background-color: #333;
 width:auto;
 height:50px;
 position: fixed; /* Set the navbar to fixed position */
@@ -64,7 +63,6 @@ width:auto;
 height:25px;
 float:center;
 overflow: hidden;
-
 position: fixed; /* Set the navbar to fixed position */
 top: 0; /* Position the navbar at the top of the page */
 /*width: 100%; /* Full width */

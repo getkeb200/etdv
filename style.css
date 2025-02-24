@@ -55,10 +55,13 @@ padding:0px 0 0 200px;
 /*-----------------------------menu-------------------*/
 #menu{
 width:auto;
-height:37px;
+height:25px;
 float:center;
-padding:auto;
-margin:auto;
+overflow: hidden;
+background-color: #333;
+position: fixed; /* Set the navbar to fixed position */
+top: 0; /* Position the navbar at the top of the page */
+/*width: 100%; /* Full width */
 
 background:url(menu_bg.gif) no-repeat center;
 }
@@ -106,7 +109,7 @@ display:block;
 padding:0px 2px 0 6px;
 margin:0 2px 0 2px;
 float:left;
-background:url(../images/divider.gif) no-repeat center top;
+
 }
 #menu ul li a:hover{
 color:#504d4b;
@@ -135,9 +138,11 @@ text-decoration:underline;
 .intro1 {
   float: block;
   width: auto;
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
   padding: 20px;
   margin: 120px 0px 0px 20px;
   height: 20px; /* Should be removed. Only for demonstration */
+  
   
 }
 .intro2 {

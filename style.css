@@ -38,14 +38,15 @@ font-size:11px;
 
 }
 #wrap{
-width:100%;
+width:auto;
 height: auto;
 margin:auto;
 background-color:#001300;
 }
 .header{
-width:100%;
+width:auto;
 height:150px;
+padding:auto;
 background:url(dvheader.jpg) no-repeat center;
 }
 .logo{
@@ -53,12 +54,12 @@ padding:0px 0 0 200px;
 }
 /*-----------------------------menu-------------------*/
 #menu{
-width:725px;
+width:350px;
 height:37px;
 float:center;
-padding:0px;
-margin:20px 0 0 350px;
-_margin:30px 0 0 80px;
+padding:auto;
+margin:auto;
+
 background:url(menu_bg.gif) no-repeat center;
 }
 #menu ul{
@@ -115,16 +116,16 @@ text-decoration:underline;
 /* Create three equal columns that floats next to each other */
 .column {
   float: block;
-  width: 450px;
+  width: 360px;
   padding: 20px;
-  margin: 20px 0px 0px 120px;
+  margin: 20px 0px 0px 20px;
   height: 120px; /* Should be removed. Only for demonstration */
   background-color: black;
 }
 
 .column p {
 
-  font-size:20px;
+  font-size:12px;
   
   color: white;
   font-family:Arial, Helvetica, sans-serif;
@@ -133,17 +134,17 @@ text-decoration:underline;
 
 .intro1 {
   float: block;
-  width: 70%;
+  width: auto;
   padding: 20px;
-  margin: 120px 0px 0px 120px;
+  margin: 120px 0px 0px 20px;
   height: 20px; /* Should be removed. Only for demonstration */
   
 }
 .intro2 {
   float: block;
-  width: 70%;
+  width: auto;
   padding: 20px;
-  margin: 20px 0px 0px 120px;
+  margin: 20px 0px 0px 20px;
   height: 150px; /* Should be removed. Only for demonstration */
   
 }
@@ -152,7 +153,7 @@ text-decoration:underline;
 
   text-align: center;
  
-  font-size:35px;
+  font-size:13px;
   font-style:italic;
 
 }
@@ -160,7 +161,7 @@ text-decoration:underline;
 
   text-align: center;
  
-  font-size:25px;
+  font-size:12px;
   font-style:italic;
 
 }
@@ -169,7 +170,7 @@ text-decoration:underline;
 
   text-align: center;
  
-  font-size:14px;
+  font-size:12px;
   font-style:italic;
 
 }
@@ -180,13 +181,13 @@ text-decoration:underline;
   display: table;
   clear: both;
   padding: 0px;
-  margin: 150px;
+  margin: 30px;
 }
 
 /* Style the footer */
 .footer {
   background-color: #000000;
-  width: 100%;
+  width: auto;
   height: 130px;
   padding: 10px;
   margin: 0px;
@@ -212,7 +213,7 @@ text-decoration:underline;
 
 .contact p {
 
-  font-size:18px;
+  font-size:14px;
   text-align: left;
   color: white;
   font-style:italic;
@@ -221,7 +222,7 @@ text-decoration:underline;
 
 .contact p1 {
 
-  font-size:14px;
+  font-size:12px;
   text-align: left;
   color: white;
   font-style:italic;

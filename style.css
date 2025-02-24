@@ -45,17 +45,19 @@ background-color:#001300;
 }
 .header{
 width:auto;
-height:100px;
+height:auto;
 padding:auto;
+}
+.logo{
 overflow: hidden;
 background-color: #333;
+width:auto;
+height:50px;
 position: fixed; /* Set the navbar to fixed position */
 top: 0; /* Position the navbar at the top of the page */
 background:url(dvheader.jpg) no-repeat center;
 }
-.logo{
-padding:0px 0 0 200px;
-}
+
 /*-----------------------------menu-------------------*/
 #menu{
 width:auto;

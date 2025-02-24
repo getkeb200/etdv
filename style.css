@@ -142,7 +142,7 @@ text-decoration:underline;
 .intro1 {
   float: block;
   width: auto;
-  margin-top: 100px; /* Add a top margin to avoid content overlay */
+  /* margin-top: 100px; /* Add a top margin to avoid content overlay */
   padding: 150px;
   margin: 120px 0px 0px 20px;
   height: 20px; /* Should be removed. Only for demonstration */

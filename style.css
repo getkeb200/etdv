@@ -121,6 +121,18 @@ color:#504d4b;
 text-decoration:underline;
 }
 
+.bodyhead {
+  float: block;
+  width: 60px; /* Adjust as needed */
+  height: 0;    /* Set height to 0 */
+  border-bottom: 30px solid #555; /* Bottom border color and size */
+  border-left: 15px solid transparent; /* Left border (transparent) */
+  /* border-right: 25px solid transparent; /* Right border (transparent) */
+  font-size:14px;
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
 .row {
   background-color: #1E90FF;
   
@@ -132,6 +144,7 @@ text-decoration:underline;
   width: 360px;
   padding: 20px;
   margin: 20px 0px 0px 20px;
+  border-radius: 50%;
   height: 70px; /* Should be removed. Only for demonstration */
   background-color: black;
 }
@@ -161,6 +174,8 @@ text-decoration:underline;
   padding: 10px;
   margin: 10px 0px 0px 20px;
   height: 90px; /* Should be removed. Only for demonstration */
+  background:url(dvheader1.jpg) no-repeat center;
+}
   
 }
 

@@ -91,7 +91,7 @@ _margin:0 2px 0 2px;
 float:left;
 text-decoration:none;
 text-align:center;
-color:#504d4b;
+color:#2B65EC;
 font-size:12px;
 line-height:37px;
 }
@@ -103,7 +103,7 @@ margin:0 5px 0 5px;
 float:left;
 text-decoration:underline;
 text-align:center;
-color:#504d4b;
+color:#2B65EC;
 font-size:12px;
 line-height:37px;
 }
@@ -121,6 +121,11 @@ color:#504d4b;
 text-decoration:underline;
 }
 
+.row {
+  background-color: #2B65EC;
+  
+}
+  
 /* Create three equal columns that floats next to each other */
 .column {
   float: block;

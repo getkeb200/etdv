@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" charset="UTF-8" />
+<title>USA DV information page</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+</head>
+<body>
+<script>
+        async function fetchCSV(url) {
+            //const data = "";
+            
+            try {
+                
+            const response = await fetch(url);
+            const data = await response.text();
+                
+            let entryArray = [];
+            let dataArray = [];
+                             
+            let str = data.replaceAll('"', '')    
+            let rows = str.split('\n');
+            let titleRowArray = rows.shift().split(',');
+
+           
+           rows.forEach((housingEntry, index) => {
+                  
+                  //let housingObject = new Object();
+                  // creat array from CSV entry string
+           let entryArray = housingEntry.split(',');
+           
+           dataArray.push(entryArray);        
+           });
+
+        
+        
+       $(document).ready( function () {
+       $('#table_id').DataTable( {
+	data: dataArray
+	} );
+        } );
+          
+      } catch (error) {
+                console.error('Error fetching CSV:', error);
+       }
+   }
+
+        
+   fetchCSV('https://getkeb200.github.io/etdv/dvceac2025.csv');
+  
+</script>
+                              
+                              
+                              <div class="header">
+	 
+	                           
+					<div id="menu" >
+						<ul>                                                                       
+						<li class="selected"><a href="index.html">Home</a></li>
+						<li class="divider"></li>
+						<li><a href="News.php">News</a></li>
+						<li class="divider"></li>
+						<li><a href="details.php">DV 2026</a></li>
+						<li class="divider"></li>
+						<li><a href="myaccount.php">Contact us</a></li>
+						<li class="divider"></li>
+						<li><a href="about.php">About us</a></li>
+						
+						</ul>
+					</div> 
+				</div>
+
+<div class="intro1"></div>
+<div class="intro3">
+
+</div>
+<div class="intro4">
+<table id="table_id" class="display">
+
+<thead>
+        <tr>
+            <th>CaseNumber</th>
+            <th>Consulate</th>
+            <th>Status</th>
+            <th>Submitteddate</th>
+            <th>Statusdate</th>
+            <th>2NLdate</th>
+			
+        </tr>
+    </thead>
+</table>
+</div>
+</body>
+</html>

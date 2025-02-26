@@ -288,3 +288,37 @@ text-decoration:underline;
  
 }
 
+.intro3 {
+  
+  width:600px;
+  padding: 20px; 
+  margin: 20px 0px 0px 60px;
+  background-color: #80daff; /* #1E90FF; */
+  
+}
+
+.intro4 {
+  
+  width:600px;
+  padding: 20px; 
+  margin: 20px 0px 0px 60px;
+  background-color: #80daff; /* #1E90FF; */
+  
+}
+
+.intro4 p {
+
+  font-size:12px;
+  text-align: left;
+  color: black;
+  
+ 
+}
+
+
+
+
+
+/*--------------------- ceac file css------------------*/
+
+

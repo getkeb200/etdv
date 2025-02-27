@@ -297,16 +297,16 @@ text-decoration:underline;
   
 }
 
-.intro4 {
+.display {
   
-  width:700px;
+  width:600px;
   padding: 20px; 
   margin: 20px 0px 0px 60px;
   background-color: #80daff; /* #1E90FF; */
   
 }
 
-.intro4 p {
+.display p {
 
   font-size:12px;
   text-align: left;

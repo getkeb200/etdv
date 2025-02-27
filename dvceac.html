@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 
-<meta http-equiv="Content-Type" charset="UTF-8" />
-<title>USA DV information page</title>
 
 
-
-<script src="jquery.min.js"></script>
-<script src="jquery.dataTables.js"></script>
-<link rel="stylesheet" type="text/css" href="jquery.dataTables.css" />
+<!-- GOOGLE FONTS-->
 <link rel="stylesheet" type="text/css" href="style.css" />
+<link href="css/font-awesome.css" rel="stylesheet" />
+<link href="css/bootstrap.css" rel="stylesheet" />
+<script src="assets/js/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/css/dataTables.min.css">
+<script type="text/javascript" charset="utf-8" language="javascript" src="assets/js/dataTables.min.js"></script>
 
+   
+    <title>Fetch CSV File</title>
 </head>
 <body>
-<script>
+
+    
+    <script>
         async function fetchCSV(url) {
             //const data = "";
             
@@ -55,7 +62,7 @@
          
        
        //$(document).ready( function () {
-       $('#table_id').DataTable( {
+       $('#myTable').DataTable( {
 	data: dataArray,
 	deferRender: true,
 	orderClasses: false,
@@ -73,8 +80,8 @@
    fetchCSV('https://getkeb200.github.io/etdv/dvceac2025.csv');
   
 </script>
-                              
-                              
+
+
                               <div class="header">
 	 
 	                           
@@ -94,25 +101,94 @@
 					</div> 
 				</div>
 
-<div class="intro1"></div>
-<div class="intro3">
+       
+       <div class="intro1"></div>
+       <div id="page-wrapper">
+            <div id="page-inner">
+                
+                
+            <style type="text/css">
+          .different-text-color { color: green; }
+            </style>
 
+
+<div class="row">
+    <div class="col-md-12">
+  
+        
+       <style type="text/css">
+        .different-text-color { color: green; }
+        </style>
+
+       
+    </div>
 </div>
 
-<table id="table_id" class="display">
+ <div>
+      <div class="well bs-component">
+            <form class="form-horizontal">
+              <fieldset>
+                
+                
+                
+                <div class="table-responsive">
+                  <form method="post" action="" >
+                    <table class="table table-bordered table-hover table-condensed" id="myTable">
+                      <!-- <h3><b>Ordinance</b></h3> -->
+                      <thead>
+                        <tr class="info">
+                         
+                          <th><p align="center">CaseNumber</p></th>
+                           <th><p align="center">Status</p></th>
+                          <th><p align="center">Consulate</p></th>                                    
+                          <th><p align="center">Submitteddate</p></th> 
+                          <th><p align="center">Statusdate</p></th>                          
+                          <th><p align="center">2NLdate</p></th> 
+                           
+                          
+                          
+                          
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        
 
-<thead>
-        <tr>
-            <th>CaseNumber</th>
-            <th>Consulate</th>
-            <th>Status</th>
-            <th>Submitteddate</th>
-            <th>Statusdate</th>
-            <th>2NLdate</th>
-			
-        </tr>
-    </thead>
-</table>
 
+                        
+                      </tbody>
+
+                        
+                    </table>
+                  </form>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+    </div>
+    
+ 
+ 
+ <div class="footer">
+
+<div class="contact">
+  <p>Contact us:-</p>
+  
+  <p1>Address:- Oassis ICT solution, [Adama, Migira Woreda], Ethiopia, Phone:- +251-941308470,E-mail:- etdvsupport@gmail.com</p1>
+  </div>
+  
+  <div class="contact">
+  
+  </div>
+  <div class="contact">
+  <p>Donate:-</p>
+  <p1>Telebirr:- 0941308470, CBE:- 1000334246087,   USDT(TON chain):-UQDHT6nvUWW5D_O6PZDEFfVEKfZti7P1Csf7XhFI05pycH5Z</p1>
+  </div>
+</div>
+  
 </body>
 </html>
+
+
+
+

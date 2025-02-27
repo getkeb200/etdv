@@ -4,11 +4,12 @@
 
 <meta http-equiv="Content-Type" charset="UTF-8" />
 <title>USA DV information page</title>
+
 <link rel="stylesheet" type="text/css" href="style.css" />
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
- 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery.dataTables.css" />
+<script src="jquery.min.js"></script>
+<script src="jquery.dataTables.js"></script>
+
 </head>
 <body>
 <script>
@@ -27,24 +28,40 @@
             let rows = str.split('\n');
             let titleRowArray = rows.shift().split(',');
 
-           
+           /*
            rows.forEach((housingEntry, index) => {
                   
                   //let housingObject = new Object();
                   // creat array from CSV entry string
            let entryArray = housingEntry.split(',');
            
-           dataArray.push(entryArray);        
+           dataArray.push(entryArray);
+           //console.log(dataArray);        
            });
-
-        
-        
-       $(document).ready( function () {
+           */
+           for (let i = 0; i < rows.length-1; i++) {
+           
+              
+              entryArray = rows[i].split(',');
+              dataArray.push(entryArray);
+             
+              
+            }
+            
+           //console.log(rows[1]);
+            console.log(dataArray);
+         
+       
+       //$(document).ready( function () {
        $('#table_id').DataTable( {
-	data: dataArray
+	data: dataArray,
+	deferRender: true,
+	orderClasses: false,
+	//bProcessing: true,
+	
 	} );
-        } );
-          
+        //} );
+         
       } catch (error) {
                 console.error('Error fetching CSV:', error);
        }

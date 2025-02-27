@@ -2,8 +2,7 @@
 
 body
 {
-width: 100vw;
-height: 100vh;
+
 background-color:#FFFFFF;
 font-family:Arial, Helvetica, sans-serif;
 padding:0;
@@ -43,13 +42,13 @@ font-size:11px;
 }
 
 #wrap{
-width:auto;
+width:720px;
 height: auto;
 margin:auto;
 background-color: #000000;
 }
 .header{
-width:800px;
+width:720px;
 height:85px;
 overflow: hidden;
 position: fixed; /* Set the navbar to fixed position */
@@ -65,7 +64,7 @@ padding:0px 0 0 0px;
 
 /*-----------------------------menu-------------------*/
 #menu{
-width:800;
+width:700px;
 height:25px;
 margin:60px 0 0 20px;
 float:center;
@@ -143,7 +142,7 @@ text-decoration:underline;
 
 .row {
   
-  width:auto;
+  width:700px;
   background-color: #80daff; /* #1E90FF; */
   
 }
@@ -232,7 +231,7 @@ text-decoration:underline;
 /* Style the footer */
 .footer {
   background-color: #000000;
-  width: auto;
+  width: 650px;
   height: 90px;
   padding: 10px;
   margin: 0px;

@@ -214,10 +214,16 @@ footer {
     .logo {
         display: none;
     }
-
-    .hamburger {
+ 
+.hamburger {
         display: flex;
     }
+
+    .banner1 {
+        
+        width: 100%;
+    }
+ 
 
     #nav-menu {
         position: absolute;

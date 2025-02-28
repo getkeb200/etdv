@@ -22,15 +22,6 @@ header {
     height: 4rem;
 }
 
-headerr {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #80daff;/*#333;*/
-    color: white;
-    height: 4rem;
-}
 
 .logo {
     font-size: 2rem;

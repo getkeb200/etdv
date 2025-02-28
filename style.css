@@ -76,7 +76,7 @@ nav ul li a:hover {
 }
 
 .banner1 {
-   width:60%;
+   width:100%;
 }
 
 .banner1 h1 {
@@ -89,6 +89,12 @@ nav ul li a:hover {
 .banner img {
     max-width: 100%;
     height: 70px;
+    
+    
+}
+.banner1 img {
+    max-width: 100%;
+    height: 90px;
     
     
 }
@@ -221,8 +227,14 @@ footer {
 
     .banner1 {
         
-        width: 60%;
+        width: 100%;
     }
+ .banner1 img {
+    max-width: 100%;
+    height: 90px;
+    
+    
+}
  
 
     #nav-menu {

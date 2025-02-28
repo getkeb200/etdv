@@ -91,7 +91,7 @@ nav ul li a:hover {
 }
 
 .form-container {
-    max-width: 90%;
+    max-width: 98%;
     margin: 0 auto;
     padding: 20px;
     background-color: #ffffff;
@@ -161,11 +161,11 @@ footer {
 /* Create three equal columns that floats next to each other */
 .column {
   float: block;
-  width: 70%;
+  width: 90%;
   padding: 20px;
   margin: 0px 0px 0px 20px;
   border-radius: 4%;
-  height: 70px; /* Should be removed. Only for demonstration */
+  height: 120px; /* Should be removed. Only for demonstration */
   background-color: black;
 }
 

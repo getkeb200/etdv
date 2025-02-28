@@ -76,7 +76,11 @@ nav ul li a:hover {
 }
 
 .banner1 {
-   width:100%;
+   background: url("dvheader1.jpg") no-repeat center;
+   background-size: 100% 100%;
+   width: 100%;
+   height: 90px;
+ 
 }
 
 .banner1 h1 {
@@ -86,18 +90,11 @@ nav ul li a:hover {
     margin: 0 auto;
  
 }
+
 .banner img {
-    max-width: 100%;
-    height: 70px;
-    
-    
+    max-width: 100%;   
 }
-.banner1 img {
-    max-width: 100%;
-    height: 90px;
-    
-    
-}
+
 /* Contact form styles */
 .contact-form {
     padding: 40px 0;
@@ -221,21 +218,11 @@ footer {
         display: none;
     }
  
-.hamburger {
+  .hamburger {
         display: flex;
     }
 
-    .banner1 {
-        
-        width: 100%;
-    }
- .banner1 img {
-    max-width: 100%;
-    height: 90px;
     
-    
-}
- 
 
     #nav-menu {
         position: absolute;

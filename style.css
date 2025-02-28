@@ -83,9 +83,17 @@ nav ul li a:hover {
  
 }
 
-.banner1 h1 {
+.bannert h1 {
  
     text-align: center;
+    background-color: #ffffff;
+    margin: 0 auto;
+ 
+}
+
+.bannert p {
+ 
+    text-align: left;
     background-color: #ffffff;
     margin: 0 auto;
  

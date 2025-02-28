@@ -1,44 +1,50 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 6.4.7.2 (Linux)"/>
-	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2025-02-25T15:20:22.310184885"/>
-	<meta name="created" content="00:00:00">
-	
-	<title>USA DV information page</title>
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact us Page</title> 
+  
 </head>
 
-
 <body>
+    <!-- Header section -->
+    <header>
+        <button class="hamburger" id="hamburger-icon">
+            <span onclick="openNavbar()"> ☰</span>
+        </button>
+        <div class="logo">Your Logo</div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">DV 2026</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="reachUs-button">Call us</button>
+    </header>
 
+    <!-- banner section  -->
+    <section class="banner">
+        <img src= "dvheader.jpg"  alt="Welcome to our USA DV Info page">
+        
+       
+    </section>
+    
+     
+          
+         
 
-			<div class="header">
-	 
-	                           
-					<div id="menu" >
-						<ul>                                                                       
-						<li class="selected"><a href="index.html">Home</a></li>
-						<li class="divider"></li>
-						<li><a href="News.php">News</a></li>
-						<li class="divider"></li>
-						<li><a href="details.php">DV 2026</a></li>
-						<li class="divider"></li>
-						<li><a href="myaccount.php">Contact us</a></li>
-						<li class="divider"></li>
-						<li><a href="about.php">About us</a></li>
-						
-						</ul>
-					</div> 
-				</div>
-				
-<div class="intro11" bgcolor="#80daff">.</div>
-<div class="row">.</div>			
-<pre class="ctl">
+    <!-- Contact form -->
+    <section class="contact-form">
+        <div class="form-container">
+            
+            <form action="#" method="POST">
+
+                <pre class="ctl">
 			
 <div class="mbody"  bgcolor="#80daff">
 
@@ -106,21 +112,45 @@
 <font color="#000000"><font face="Liberation Mono, monospace"><font size="2" style="font-size: 10pt"><span lang="am-ET"><span lang="am-ET">መያዝ በጣም አስፈላጊ ነው። አሜሪካን ሀገር ኤርፖርት ውስጥ ሲጠይቁ በቀላሉ ለማቅረብ አይቸገሩም። </span></span></font></font></font>
 
 </div></pre>
-<div class="footer">
+                
+                
+                
 
-<div class="contact">
-  <p>Contact us:-</p>
-  
-  <p1>Address:- Oassis ICT solution, [Adama, Migira Woreda], Ethiopia, Phone:- +251-941308470,E-mail:- etdvsupport@gmail.com</p1>
-  </div>
-  
-  <div class="contact">
-  
-  </div>
-  <div class="contact">
-  <p>Donate:-</p>
-  <p1>Telebirr:- 0941308470, CBE:- 1000334246087,   USDT(TON chain):-UQDHT6nvUWW5D_O6PZDEFfVEKfZti7P1Csf7XhFI05pycH5Z</p1>
-  </div>
-</div>
+                
+            </form>
+        </div>
+    </section>
+
+    <!-- Company contact info -->
+    <section class="contact-info">
+        <h2>@ Donate us</h2>
+        <address>
+            Oassis ICT solution<br>
+            Telebirr:- 0941308470<br>
+            CBE:- 1000334246087<br>
+            USDT(TON chain):-UQDHT6nvUWW5D_O6PZDEFfVEKfZti7P1Csf7XhFI05pycH5Z</a><br>
+            Email: <a href="oassissupport@gmail.com">oassissupport@gmail.com</a>
+        </address>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <p>
+          &copy; 2025 Your Company. All rights reserved.
+          </p>
+    </footer>
+    
+    
+    <script>
+    
+    // JavaScript function to toggle the navigation menu
+
+function openNavbar() {
+  const navMenu = document.getElementById("nav-menu");
+  navMenu.classList.toggle("active");
+}
+ </script>   
 </body>
+
 </html>
+

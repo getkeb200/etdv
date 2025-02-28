@@ -15,7 +15,7 @@ pre {
 display: flex;
 }
 
-/* Header styles */
+/* ----- Header styles ----- */
 header {
     display: flex;
     justify-content: space-between;

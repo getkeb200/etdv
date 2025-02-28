@@ -178,7 +178,7 @@ footer {
   border-bottom: 20px solid red; /* Bottom border color and size */
   /* border-left: 15px solid transparent; /* Left border (transparent) */
   border-right: 35px solid transparent; /* Right border (transparent) */
-  font-size:10px;
+  font-size:12px;
   color: white;
   font-family:Arial, Helvetica, sans-serif;
 }
@@ -187,7 +187,8 @@ footer {
   float: block;
   width: 90%; /* Adjust as needed */
   height: auto;    /* Set height to 0 */
-  /* padding: 20px; */  
+  /* padding: 20px; */ 
+  font-size:10px;
 }
 
 

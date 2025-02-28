@@ -11,6 +11,10 @@ body {
     line-height: 1.6;
 }
 
+pre {
+	width: 95%;
+}
+
 /* Header styles */
 header {
     display: flex;

@@ -181,17 +181,17 @@ footer {
 /* Create three equal columns that floats next to each other */
 .column {
   float: block;
-  width: 90%;
+  width: 98%;
   padding: 20px;
   margin: 0px 0px 0px 20px;
   border-radius: 4%;
-  height: 120px; /* Should be removed. Only for demonstration */
+  height: 130px; /* Should be removed. Only for demonstration */
   background-color: black;
 }
 
 .column p {
 
-  font-size:12px;
+  font-size:10px;
   
   color: white;
   font-family:Arial, Helvetica, sans-serif;

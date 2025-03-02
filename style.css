@@ -185,7 +185,7 @@ footer {
   padding: 20px;
   margin: 0px 0px 0px 20px;
   border-radius: 4%;
-  height: 130px; /* Should be removed. Only for demonstration */
+  height: auto; /* Should be removed. Only for demonstration */
   background-color: black;
 }
 
@@ -200,7 +200,7 @@ footer {
 
 .bodyhead {
   float: block;
-  width: 50%; /* Adjust as needed */
+  width: 60%; /* Adjust as needed */
   height: 0px;    /* Set height to 0 */
   /* padding: 20px; */
   margin: 10px 0px 0px 20px;

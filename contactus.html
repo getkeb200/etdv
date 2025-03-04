@@ -46,11 +46,11 @@
             <h2>Your Details</h2>
             <form id="emailForm">
 
-                <label for="name">Name*: </label>
-                <input type="text" id="name" name="name" required>
+                <label for="name">From*: </label>
+                <input type="email" id="from" name="fromemail" required>
 
-                <label for="email">From*: </label>
-                <input type="email" id="from" name="email" required>
+                <label for="email">To*: </label>
+                <input type="email" id="to" value="oassishelp@gmail.com" name="toemail" required readonly>
 
                 <label for="subject">Subject*: </label>
                 <input type="text" id="subject" name="subject" required>
@@ -72,7 +72,7 @@
             Telebirr:- 0941308470<br>
             CBE:- 1000334246087<br>
             USDT(TON chain):-UQDHT6nvUWW5D_O6PZDEFfVEKfZti7P1Csf7XhFI05pycH5Z</a><br>
-            Email: <a href="oassishelp@gmail.com">oassissupport@gmail.com</a>
+            Email: <a href="contactus.html">oassishelp@gmail.com</a>
         </address>
     </section>
 
@@ -102,17 +102,17 @@ document.getElementById("emailForm").addEventListener("submit", function(event) 
     event.preventDefault();
 
     // Get form values
-    let fromName = document.getElementById("name").value;
     let fromEmail = document.getElementById("from").value;
+    let toEmail = document.getElementById("to").value;
     let subject = document.getElementById("subject").value;
     let message = document.getElementById("message").value;
 
     // Sending email using Email.js
-    emailjs.send("service_cq18ojy", "template_f2ydf99", {
-        to_email: fromEmail,
+    emailjs.send("service_1d1taig", "template_f2ydf99", {
+        to_email: toEmail,
         subject: subject,
         message: message,
-        from_name: fromName
+        from_name: fromEmail
     }).then(
         function(response) {
             document.getElementById("status").innerText = "Email sent successfully!";

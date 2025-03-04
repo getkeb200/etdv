@@ -60,7 +60,8 @@
             <form action="#" method="POST">
 
                 
-                   <table  border="1" style="width:100%; font-size: 8px; " class="table table-bordered table-hover table-condensed" id="myTable">
+                  
+                    <table  border="1" style="font-size: 11px;" class="table table-bordered table-hover table-condensed" id="myTable">
                       <!-- <h3><b>Ordinance</b></h3> -->
                       <thead>
                         <tr class="info">
@@ -68,7 +69,6 @@
                           <th>CaseNumber</th>
                            <th>Consulate</th>
                           <th>Status</th>                                    
-                          <th>Submitteddate</th> 
                           <th>Statusdate</th>                          
                           <th>2NLdate</th> 
                            
@@ -106,7 +106,7 @@
             Telebirr:- 0941308470<br>
             CBE:- 1000334246087<br>
             USDT(TON chain):-UQDHT6nvUWW5D_O6PZDEFfVEKfZti7P1Csf7XhFI05pycH5Z</br>
-            Email: <a href="oassishelp@gmail.com">oassissupport@gmail.com</a>
+            Email: <a href="contactus.html">oassishelp@gmail.com</a>
         </address>
     </section>
 
@@ -174,6 +174,9 @@ function openNavbar() {
 	data: dataArray,
 	deferRender: true,
 	orderClasses: false,
+	autoWidth: false,
+	columnDefs: [{ width: 40, targets: [0,1,2,3,4] }],
+	fixedColumns: false
 	//bProcessing: true,
 	
 	} );

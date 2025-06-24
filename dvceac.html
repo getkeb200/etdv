@@ -7,15 +7,15 @@
    
     
     <!---- GOOGLE FONTS-->
-<link rel="stylesheet"  href="style.css" />
 
 
 <script src="jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="dataTables.min.css">
 <script type="text/javascript" charset="utf-8" language="javascript" src="dataTables.min.js"></script>
 <link href="font-awesome.css" rel="stylesheet" />
+<link rel="stylesheet"  href="style.css" />
 
-    <title>Contact us Page</title> 
+    <title>ET DV Info Page</title> 
   
 </head>
 
@@ -57,21 +57,21 @@
     <section class="contact-form">
         <div class="form-container">
             
-            <form action="#" method="POST">
+            <!--   <form action="#" method="POST"> -->
 
                 
-                  
-                    <table  border="1" style="font-size: 8px;" class="table table-bordered table-hover table-condensed" id="myTable">
+                <div id="table-form">
+                    <table  border="1" class="table table-bordered table-hover table-condensed" id="myTable">
                       <!-- <h3><b>Ordinance</b></h3> -->
                       <thead>
                         <tr class="info">
-                         
+                            
                           <th>CaseNumber</th>
                            <th>Consulate</th>
                           <th>Status</th>                                    
                           <th>Statusdate</th>                          
                           <th>2NLdate</th> 
-                           
+                          
                           
                           
                           
@@ -87,14 +87,11 @@
 
                         
                     </table>
-                  
-   
+                            
                 
+                </div>
                 
-                
-
-                
-            </form>
+            
         </div>
     </section>
 
@@ -113,7 +110,7 @@
     <!-- Footer section -->
     <footer>
         <p>
-          &copy; 2025 Your Company. All rights reserved.
+          &copy; 2025 Oassis ICT s/n. All rights reserved.
           </p>
     </footer>
     
@@ -130,7 +127,7 @@ function openNavbar() {
  
  
  <script>
-        async function fetchCSV(url) {
+  async function fetchCSV(url) {
             //const data = " ";
             
             try {
@@ -144,43 +141,37 @@ function openNavbar() {
             let str = data.replaceAll('"', '')    
             let rows = str.split('\n');
             let titleRowArray = rows.shift().split(',');
-
-           /*
-           rows.forEach((housingEntry, index) => {
-                  
-                  //let housingObject = new Object();
-                  // creat array from CSV entry string
-           let entryArray = housingEntry.split(',');
-           
-           dataArray.push(entryArray);
-           //console.log(dataArray);        
-           });
-           */
+          
            for (let i = 0; i < rows.length-1; i++) {
-           
-              
+            
               entryArray = rows[i].split(',');
               dataArray.push(entryArray);
-             
-              
+                          
             }
             
            //console.log(rows[1]);
-            console.log(dataArray);
-         
-       
+            console.log(dataArray);     
+
        //$(document).ready( function () {
        $('#myTable').DataTable( {
-	data: dataArray,
-	deferRender: true,
-	orderClasses: false,
-	autoWidth: false,
-	columnDefs: [{ width: 20, targets: [0,1,2,3,4] }],
+           data: dataArray,
+           deferRender: true,
+           orderClasses: false,
+           "bAutoWidth": false, // Disable auto-width for explicit control
+           
+           "aoColumns": [
+           { swidth: '25%', targets: 0 },
+           { swidth: '10%', targets: 1 },
+           { swidth: '15%', targets: 2 },
+           { swidth: '25%', targets: 3 },          
+           { swidth: '25%', targets: 4 }
+           
+           ],
+           
 	fixedColumns: false
 	//bProcessing: true,
 	
 	} );
-        //} );
          
       } catch (error) {
                 console.error('Error fetching CSV:', error);
@@ -189,6 +180,9 @@ function openNavbar() {
 
         
    fetchCSV('https://getkeb200.github.io/etdv/dvceac2025.csv');
+//fetchCSV('./dvceac2025.csv');
+
+   //$("#myTable").css("width","100%");
   
 </script> 
 </body>

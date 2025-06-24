@@ -7,15 +7,15 @@
    
     
     <!---- GOOGLE FONTS-->
-<link rel="stylesheet"  href="style.css" />
 
 
 <script src="jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="dataTables.min.css">
 <script type="text/javascript" charset="utf-8" language="javascript" src="dataTables.min.js"></script>
 <link href="font-awesome.css" rel="stylesheet" />
+<link rel="stylesheet"  href="style.css" />
 
-    <title>Contact us Page</title> 
+    <title>ET DV Info Page</title> 
   
 </head>
 
@@ -57,7 +57,7 @@
     <section class="contact-form">
         <div class="form-container">
             
-            <form action="#" method="POST">
+            
 
 <div class="mbody"  bgcolor="#80daff">
 <p><span style="color: #222222;">&nbsp;&nbsp;<span lang="am-ET"><span style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: medium;">🔥 <strong><span style="text-decoration: underline;">የአአ አሜሪካን  ኢምባሲ ሳምንታዊ ክንውን</span></strong>🔥</span></span></span></span></p>
@@ -80,8 +80,8 @@
 <div class="mbody"  bgcolor="#80daff">
 .
 </div>
-               
-                   <table  border="1" style="font-size: 11px;" class="table table-bordered table-hover table-condensed" id="myTable">
+               <div id="table-form">
+                   <table  border="1" class="table table-bordered table-hover table-condensed" id="myTable">
                       <!-- <h3><b>Ordinance</b></h3> -->
                       <thead>
                         <tr class="info">
@@ -109,13 +109,13 @@
                         
                     </table>
                   
-   
+               </div>
                 
                 
                 
 
                 
-            </form>
+            
         </div>
     </section>
 
@@ -166,17 +166,7 @@ function openNavbar() {
             let rows = str.split('\n');
             let titleRowArray = rows.shift().split(',');
 
-           /*
-           rows.forEach((housingEntry, index) => {
-                  
-                  //let housingObject = new Object();
-                  // creat array from CSV entry string
-           let entryArray = housingEntry.split(',');
            
-           dataArray.push(entryArray);
-           //console.log(dataArray);        
-           });
-           */
            for (let i = 0; i < rows.length-1; i++) {
            
               
@@ -196,8 +186,17 @@ function openNavbar() {
 	deferRender: true,
 	orderClasses: true,
 	autoWidth: false,
-	columnDefs: [{ width: 40, targets: [0,1,2,3,4,5] }],
-	fixedColumns: false
+	"bAutoWidth": false, // Disable auto-width for explicit control
+           
+           "aoColumns": [
+           { swidth: '30%', targets: 0 },
+           { swidth: '13%', targets: 1 },
+           { swidth: '15%', targets: 2 },
+           { swidth: '15%', targets: 3 },          
+           { swidth: '13%', targets: 4 },
+           { swidth: '13%', targets: 5 }
+           ],
+fixedColumns: false
 	//bProcessing: true,
 	
 	} );
@@ -210,6 +209,7 @@ function openNavbar() {
 
         
    fetchCSV('https://getkeb200.github.io/etdv/consulate.csv');
+  //fetchCSV('./consulate.csv');
   
 </script> 
 </body>

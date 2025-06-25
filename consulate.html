@@ -14,6 +14,7 @@
 <script type="text/javascript" charset="utf-8" language="javascript" src="dataTables.min.js"></script>
 <link href="font-awesome.css" rel="stylesheet" />
 <link rel="stylesheet"  href="style.css" />
+<link rel="stylesheet"  href="bootstrap.css" />
 
     <title>ET DV Info Page</title> 
   
@@ -39,7 +40,6 @@
                 <li><a href="contactus.html">Contact</a></li>
             </ul>
         </nav>
-        <button class="reachUs-button">Call us</button>
     </header>
 
 
@@ -93,29 +93,19 @@
                           <th>DJI</th>                          
                           <th>NRB</th> 
                            
-                          
-                          
-                          
-                          
+        
                         </tr>
                       </thead>
                       <tbody>
-                        
-
-
-                        
+   
                       </tbody>
 
                         
                     </table>
                   
                </div>
-                
-                
-                
 
-                
-            
+
         </div>
     </section>
 
@@ -134,7 +124,7 @@
     <!-- Footer section -->
     <footer>
         <p>
-          &copy; 2025 Your Company. All rights reserved.
+          &copy; 2025 Oassis ICT s/n. All rights reserved.
           </p>
     </footer>
     
@@ -185,10 +175,10 @@ function openNavbar() {
 	data: dataArray,
 	deferRender: true,
 	orderClasses: true,
-	autoWidth: false,
-	"bAutoWidth": false, // Disable auto-width for explicit control
+	autoWidth: true,
+	bAutoWidth: false, // Disable auto-width for explicit control
            
-           "aoColumns": [
+           aoColumns: [
            { swidth: '30%', targets: 0 },
            { swidth: '13%', targets: 1 },
            { swidth: '15%', targets: 2 },
